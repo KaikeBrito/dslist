@@ -1,12 +1,8 @@
 package com.devsuperior.dslist.dto;
 
 import com.devsuperior.dslist.entities.Game;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 
-public class GameMinDto {
+public class GameMinDTO {
 
     private Long id;
     private String title;
@@ -14,10 +10,10 @@ public class GameMinDto {
     private String imgUrl;
     private String shortDescription;
 
-    public GameMinDto() {
+    public GameMinDTO() {
     }
 
-    public GameMinDto(Game entity) {
+    public GameMinDTO(Game entity) {
         id = entity.getId();
         title = entity.getTitle();
         year = entity.getYear();
