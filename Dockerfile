@@ -8,6 +8,9 @@ COPY .mvn .mvn
 COPY mvnw .
 COPY pom.xml .
 
+# Garantir que o script mvnw tenha permissões de execução
+RUN chmod +x mvnw
+
 # Baixar dependências
 RUN ./mvnw dependency:go-offline -B
 
